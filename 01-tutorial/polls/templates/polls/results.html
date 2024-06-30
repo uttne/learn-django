@@ -2,6 +2,7 @@
 
 <ul>
     {% for choice in question.choice_set.all %}
+    <!-- pluralize は英語の複数形を生成するのに便利なテンプレートフィルター -->
     <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
     {% endfor %}
 </ul>
