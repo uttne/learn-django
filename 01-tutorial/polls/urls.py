@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 
+# 名前空間を設定することで {% url %} で解決するviewのnameの競合を回避することができる
+app_name = "polls"
 urlpatterns = [
     # ex: /polls/
     path("", views.index, name="index"),
