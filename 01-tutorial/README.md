@@ -1,3 +1,12 @@
+# Bookmark
+
+## Next
+
+[はじめての Django アプリ作成、その 6 | Django ドキュメント](https://docs.djangoproject.com/ja/5.0/intro/tutorial06/#writing-your-first-django-app-part-6)
+
+----------------------------------------------------------------
+# 問題解決
+
 ## admin の画面が表示されない
 
 ### 内容
