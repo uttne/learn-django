@@ -1,7 +1,9 @@
 {% if latest_question_list %}
 <ul>
     {% for question in latest_question_list %}
-    <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+    <!-- <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li> -->
+    <!-- 上記のURL 指定と同等なものを urls.py に定義した name を使って疎結合に表現することができる -->
+    <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
 </ul>
 {% else %}
